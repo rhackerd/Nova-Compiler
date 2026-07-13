@@ -1,0 +1,21 @@
+@name math
+
+ext func MakeWindow() -> u64;
+
+struct Vec2 {
+    x: u64,
+    y: u64
+}
+
+func main() -> u64;
+ext func WindowShouldClose() -> bool;
+ext func BeginDrawing() -> bool;
+ext func EndDrawing() -> bool;
+ext func DrawBg(r:u64, g:u64, g:u64) -> bool;
+ext func DrawRect(posX:u64, posY:u64, width:u64, height:u64) -> bool;
+ext func IsKeyDown(key: u64) -> bool;   
+ext func GetKeyPressed() -> u64;
+ext func SetTargetFPS(fps: u64) -> bool;
+ext func DrawFPS(x: u64, y:u64) -> bool;
+ext func Test() -> void;
+ext func test() -> *u64;
